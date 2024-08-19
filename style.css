@@ -1,126 +1,140 @@
 /* Add styles here */
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-body{
-    font-family: "Open Sans", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
-h1{
-    text-align: center;
-    color: black;
-    font-size: 50px;
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
 }
-
-
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-label{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 10px;
+label {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
 }
 
-.input{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-input, label{
-    margin: 3px;
+input,
+label {
+  margin: 3px;
 }
 
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: 500px;
-    background-color: white;
-    padding: 20px;  
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 500px;
+  background-color: rgb(245, 252, 200);
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 400px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
 }
 
-.new-list{
-   text-align: left;
-   margin: 5px 0px;
-   border-bottom: 1px solid grey;
+.new-list {
+  text-align: left;
+  margin: 5px 0px;
+  border-bottom: 1px solid grey;
 }
 
-.checked{
-    text-decoration: line-through;
-    text-decoration-color: red;
-    color: grey;
+.checked {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  color: grey;
 }
 
-.rule{
-    border: 1px dotted grey;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 0px;
-    width: 200px;
-    text-align: left;
+.rule {
+  border: 1px dotted grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 0px;
+  width: 200px;
+  text-align: left;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-.rule>p{
-    font-size: small;
-    color: grey;
-    margin:0;
-    padding:0;
-}
-
-#submit{
-    background-color: rgba(0, 0, 0, 0.1);
-    border-style: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 200ms ease-in-out;
+.rule > p {
+  font-size: small;
+  color: grey;
+  margin: 0;
+  padding: 0;
 }
 
-#submit:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px 15px;
+#submit {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
-#text{
-    border-style:none none solid none;
-    border-radius: 5px;
-    padding: 5px;
-    border-color: lightskyblue;
-    transition: border-color 0.5s ease, width 0.5s ease, box-shadow 0.5s ease;
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
 }
 
-#text:hover{
-    
-    border-style: none none dashed none;
-    outline: none;
-    width: 300px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.5);
+#text {
+  border-style: none none solid none;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: lightskyblue;
+  transition: border-color 0.5s ease, width 0.5s ease, box-shadow 0.5s ease;
 }
-#text:focus{
-    
-    border-style: none none dashed none;
-    outline: none;
-    width: 300px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.5);
-    
+
+#text:hover {
+  border-style: none none dashed none;
+  outline: none;
+  width: 300px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.5);
+}
+#text:focus {
+  border-style: none none dashed none;
+  outline: none;
+  width: 300px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.5);
+}
+
+#reset {
+  position: relative;
+  float: inline-end;
+  translate: -100px -55px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+#reset:hover {
+  background-color: rgba(248, 3, 3, 0.2);
+  padding: 5px 15px;
+  color: red;
 }
